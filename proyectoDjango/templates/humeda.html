@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block tittle %}
+guias
+{% endblock %}
+
+{% block content %}
+
+<section class="parallax" style="background-image: url('{% static '/imagenes/parallaxhumedad.jpg'%}')">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h2 class="texto">¿Parece demasiado húmedo?</h2>
+    </div>
+</section>
+<p class="textop">
+    Ocasionalmente puede mirar su terrario y parece que hay demasiada condensación en
+    el interior. Esto puede ser que su terrario está demasiado caliente y está creando
+    demasiada condensación o su terrario está demasiado frío y está respirando
+    demasiado. Lo mejor que puede hacer es cambiar la posición del terrario y luego sacar
+    el corcho durante unas horas hasta que el exceso de condensación se haya secado.
+</p>
+<section class="parallax" style="background-image: url('{% static '/imagenes/parallaxhumedad1.jpg'%}')">
+</section>
+
+{% endblock %}

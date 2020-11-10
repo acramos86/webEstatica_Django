@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block tittle %}
+guias
+{% endblock %}
+
+{% block content %}
+
+<section class="parallax" style="background-image: url('{% static '/imagenes/parallaxDuda1.jpg'%}')">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h2 class="texto">En caso de duda, no regar.</h2>
+    </div>
+</section>
+<p class="textop">
+    Lo principal para recordar es que su terrario crea su propia agua, lo que significa que
+    es muy raro que tenga que regarla. Mientras vea una pequeña cantidad de
+    condensación en el interior del vaso, no necesita regar su terrario. Siempre decimos
+    que no riegue por sí mismo, incluso si no ha regado su terrario durante meses, siempre
+    que haya condensación, estará bien. Si cree que su terrario está comenzando a verse
+    un poco seco, tal vez espere hasta el día siguiente y si todavía se ve seco, dele uno o
+    dos chorros de agua. Eso nos lleva al siguiente punto: sí tiene que regar, siempre
+    introduzca agua como vapor de agua usando una botella rociadora o un señor, ya que
+    verter agua generalmente conducirá a un terrario 'pantanoso' con exceso de agua.
+</p>
+<section class="parallax" style="background-image: url('{% static '/imagenes/parallaxDuda.jpg'%}')">
+</section>
+
+{% endblock %}

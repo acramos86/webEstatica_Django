@@ -1,0 +1,106 @@
+/*{% load static %}*/
+
+html, body{
+	padding: 0px;
+	margin: 0;
+	font-size: 20;
+	background: linear-gradient( #b2dfdb, #009688);
+	font-family: "Syne Mono", monospace;
+}
+
+nav{
+	background-color: #009688;
+}
+
+div .card{
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-action{
+	float: right;
+}
+
+.card-content{
+	height: 100%;
+}
+
+.nav-wrapper{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.footer-copyright{
+	justify-content: space-between;
+}
+
+.probar{
+	margin: 10px;
+	font-size: 40px;
+}
+
+.page-footer{
+	 background-color: #009688;
+ }
+
+.page-footer i{
+	/*color: black;*/
+	color: white;
+}
+
+.collapsible-body{
+	background-color: #eeeeee;
+	font-size: 15px;
+}
+
+div .color{
+	background-color: #b2dfdb;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div .colores{
+	background-color: #fafafa;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*barra scroll*/
+body::-webkit-scrollbar{
+	width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+	background-color: #4db6ac;
+	border-radius: 10px;
+}
+
+/*Efecto Parallax*/
+.parallax{
+	padding: 10px;
+	width: 100%;
+	height: 60vh;
+	background-color: linear-gradient( black, white);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+}
+
+.texto{
+	text-align: center;
+	padding: 18px;
+	color: white;
+	background: black;
+}
+
+.textop{
+	text-align: justify;
+	padding: 18px;
+	font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	/*font-size: 20px;*/
+	font-family: 'Oswald', sans-serif;
+}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block tittle %}
+guias
+{% endblock %}
+
+{% block content %}
+<section class="parallax" style="background-image: url('{% static '/imagenes/parallaxIncu.jpg'%}')">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h2 class="texto">Dos semanas de incubacion</h2>
+    </div>
+</section>
+<p class="textop">
+    No se preocupe, ¡esto no es tan aterrador como parece! Una vez que haya construido
+    su propio terrario, le sugerimos que dé un período de incubación de dos semanas, lo
+    que significa quitar el corcho ocasionalmente durante las primeras dos semanas. Si lo
+    piensas bien, acabas de tomar estas plantas de un entorno al que están
+    acostumbradas por completo y las metiste en este frasco sellado; solo necesitan
+    acostumbrarse a este nuevo espacio. Así que cada pocos días quítese el corcho y
+    déjelo reposar durante unas horas y luego vuelva a encenderlo, repitiendo esto cada
+    pocos días durante dos semanas, después de lo cual debería eestar bien para dejar el
+    corcho adentro. No te preocupes, solo hazlo cuando lo recuerdes, ¡probablemente lo
+    hayas olvidado ya que tu terrario ya lo está haciendo muy bien!
+</p>
+<section class="parallax" style="background-image: url('{% static '/imagenes/parallaxIncu2.jpg'%}')">
+</section>
+
+{% endblock %}

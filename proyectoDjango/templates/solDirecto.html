@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block tittle %}
+guias
+{% endblock %}
+
+{% block content %}
+
+<section class="parallax" style="background-image: url('{% static '/imagenes/parallaxSol.jpg'%}')">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h2 class="texto">Manténgase alejado de cualquier sol directo o calor</h2>
+    </div>
+</section>
+<p class="textop">
+    Las plantas utilizadas en estos terrarios sellados prosperan con poca luz. 
+    <br>Mantenga sus terrarios alejados de cualquier sol directo, como una repisa de la ventana orientada
+    al sur, o dejándolo en el automóvil en un día caluroso (palabras de la experiencia ...) ya
+    que el sol que entra por el vidrio rápidamente "cocinará" las plantas que las causan
+    marchitarse y morir. Esto va para dejar su terrario en un lugar demasiado cálido
+    también, al lado de los radiadores y colocado en pisos con calefacción será muy
+    perjudicial.
+</p>
+<section class="parallax" style="background-image: url('{% static '/imagenes/parallaxSol1.jpg'%}')">
+</section>
+
+{% endblock %}
