@@ -1,10 +1,9 @@
 from django.http import HttpResponse
-from django.template import loader, RequestContext  
 from django.template import loader
 
 def inicio(request):
     
-    documento = loader.get_template('inicio.html')
+    documento = loader.get_template('index.html')
     docRender = documento.render()
     return HttpResponse(docRender)
 
