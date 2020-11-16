@@ -30,6 +30,10 @@ div .card{
 	margin-right: 10px;
 }
 
+.side-nav{
+	background-color: #009688;
+}
+
 .footer-copyright{
 	justify-content: space-between;
 }
@@ -103,14 +107,4 @@ body::-webkit-scrollbar-thumb{
 h1, h2, h3, h4, h5, h6{
 	/*font-size: 20px;*/
 	font-family: 'Oswald', sans-serif;
-}
-
-@media (max-wdth: 858px){
-	nav{
-		background-color: #009688;
-	}
-	.nav-wrapper{
-		display: block;
-	}
-
 }
