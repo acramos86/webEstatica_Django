@@ -44,3 +44,13 @@ def cuidados(request):
     documento = loader.get_template('cuidados.html')
     docRender = documento.render()
     return HttpResponse(docRender)
+
+def tarjetas(request):
+    documento = loader.get_template('tienda_tarjeta.html')
+    docRender = documento.render()
+    return HttpResponse(docRender)
+
+def burbSoporte(request):
+    documento = loader.get_template('tienda_burbujaSoporte.html')
+    docRender = documento.render()
+    return HttpResponse(docRender)

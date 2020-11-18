@@ -24,8 +24,8 @@
 			<li><a class="dropdown-button" data-hover="true" href="" data-activates="tienda1">Tienda<i class="material-icons right">arrow_drop_down</i></a>
 				<!-- Dropdown Structure -->
 				<ul id="tienda1" class="dropdown-content">
-					<li><a href="#!">Tarjetas de regalo</a></li>
-					<li><a href="#!">Burbujas con soporte</a></li>
+					<li><a href="{% url 'tarjetas' %}">Tarjetas de regalo</a></li>
+					<li><a href="{% url 'burbSoporte' %}">Burbujas con soporte</a></li>
 					<li><a href="#!">Burbuja colgante</a></li>
 					<li><a href="#!">Erlenmeyer</a></li>
 					<li><a href="#!">Balon plano</a></li>
@@ -60,8 +60,8 @@
 						<li><a class="dropdown-button" data-hover="true" href="" data-activates="tienda">Tienda<i class="material-icons right">arrow_drop_down</i></a>
 							<!-- Dropdown Structure -->
 							<ul id="tienda" class="dropdown-content">
-								<li><a href="#!">Tarjetas de regalo</a></li>
-								<li><a href="#!">Burbujas con soporte</a></li>
+								<li><a href="{% url 'tarjetas' %}">Tarjetas de regalo</a></li>
+								<li><a href="{% url 'burbSoporte' %}">Burbujas con soporte</a></li>
 								<li><a href="#!">Burbuja colgante</a></li>
 								<li><a href="#!">Erlenmeyer</a></li>
 								<li><a href="#!">Balon plano</a></li>
@@ -89,7 +89,7 @@
 
 		<!--Inicio del section-->
 
-		{%block content %}{% endblock %}
+		{% block content %}{% endblock %}
 		
 		<!--Fin del section-->
 
