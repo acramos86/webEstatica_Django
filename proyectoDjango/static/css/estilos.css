@@ -30,6 +30,10 @@ div .card{
 	margin-right: 10px;
 }
 
+.side-nav{
+	background-color: #009688;
+}
+
 .footer-copyright{
 	justify-content: space-between;
 }
