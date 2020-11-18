@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block tittle %}
+Tienda
+{% endblock %}
+
+{% block content %}
+
+<div class="row tajertaClass">
+    <div class="col s12 l8">
+        <div class="card-panel">
+            <div class="card-content">
+                {% block carrito %}
+
+                {% endblock %}                               
+            </div>            
+        </div>
+    </div>
+    <!-- Este es el aside -->
+    <div class="col s12 l4">
+
+        <aside class="card-panel">
+            <h2>Tienda</h2>          
+            <div class="section">
+                <a class="black-text" href="{% url 'tarjetas' %}">Tarjetas de regalo</a>               
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+                <a class="black-text" href="{% url 'burbSoporte' %}">Burbujas con soporte</a>             
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+                <a class="black-text" href="{% url 'burbujaColgante' %}">Burbujas colgantes</a>             
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+                <a class="black-text" href="{% url 'erlenmeyer' %}">Erlenmeyer</a>             
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+                <a class="black-text" href="{% url 'balonPlano' %}">Balon plano</a>             
+            </div>
+            <div class="divider "></div>
+            <div class="section">
+                <a class="black-text" href="{% url 'domos' %}">Domos</a>             
+            </div>
+            <div class="divider"></div>
+        </aside>
+    </div>
+</div>
+
+{% endblock %}

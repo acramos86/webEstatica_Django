@@ -1,0 +1,18 @@
+{% extends "tienda.html" %}
+{% load static %}
+
+{% block carrito %}
+
+<img class="responsive-img center-align" src="{% static '/imagenes/burbSoporte.jpg'%}" style="width: 40%;"> 
+<h4>Burbuja con soporte</h4>
+<p>
+    Uno de nuestros terrarios abiertos favoritos. La Burbuja S esta disponible en dos
+    tamaños, perfecto para tu hogar o estudio.
+    Estos terrarios son realmente únicos.
+</p>
+<div class="botonesTienda">
+    <a class="btn" href="https://api.whatsapp.com/send?phone=[+57][3005499053]">Solicitar mas informacion   <i class="fab fa-whatsapp"></i></a>
+    <a class="btn" href="#">Comprar   <i class="fas fa-cart-plus"></i></a>
+</div>
+
+{% endblock %}

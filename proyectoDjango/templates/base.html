@@ -23,13 +23,13 @@
 			</li>
 			<li><a class="dropdown-button" data-hover="true" href="" data-activates="tienda1" style="color: white;">Tienda<i class="material-icons right" style="color: white;">arrow_drop_down</i></a>
 				<!-- Dropdown Structure -->
-				<ul id="tienda1" class="dropdown-content" >
-					<li><a href="#!" style="color: #26A69A;">Tarjetas de regalo</a></li>
-					<li><a href="#!" style="color: #26A69A;">Burbujas con soporte</a></li>
-					<li><a href="#!" style="color: #26A69A;">Burbuja colgante</a></li>
-					<li><a href="#!" style="color: #26A69A;">Erlenmeyer</a></li>
-					<li><a href="#!" style="color: #26A69A;">Balon plano</a></li>
-					<li><a href="#!" style="color: #26A69A;">Domos</a></li>
+				<ul id="tienda1" class="dropdown-content">
+					<li><a href="{% url 'tarjetas' %}">Tarjetas de regalo</a></li>
+					<li><a href="{% url 'burbSoporte' %}">Burbujas con soporte</a></li>
+					<li><a href="{% url 'burbujaColgante' %}">Burbuja colgante</a></li>
+					<li><a href="{% url 'erlenmeyer' %}">Erlenmeyer</a></li>
+					<li><a href="{% url 'balonPlano' %}">Balon plano</a></li>
+					<li><a href="{% url 'domos' %}">Domos</a></li>
 				</ul>
 			</li>
 			<li><a class="dropdown-button" data-hover="true" href="{% url 'cuidados' %}" data-activates="cuidados" style="color: white;">Cuidados</a>							
@@ -60,12 +60,12 @@
 						<li><a class="dropdown-button" data-hover="true" href="" data-activates="tienda">Tienda<i class="material-icons right">arrow_drop_down</i></a>
 							<!-- Dropdown Structure -->
 							<ul id="tienda" class="dropdown-content">
-								<li><a href="#!">Tarjetas de regalo</a></li>
-								<li><a href="#!">Burbujas con soporte</a></li>
-								<li><a href="#!">Burbuja colgante</a></li>
-								<li><a href="#!">Erlenmeyer</a></li>
-								<li><a href="#!">Balon plano</a></li>
-								<li><a href="#!">Domos</a></li>
+								<li><a href="{% url 'tarjetas' %}">Tarjetas de regalo</a></li>
+								<li><a href="{% url 'burbSoporte' %}">Burbujas con soporte</a></li>
+								<li><a href="{% url 'burbujaColgante' %}">Burbuja colgante</a></li>
+								<li><a href="{% url 'erlenmeyer' %}">Erlenmeyer</a></li>
+								<li><a href="{% url 'balonPlano' %}">Balon plano</a></li>
+								<li><a href="{% url 'domos' %}">Domos</a></li>
 							</ul>
 						</li>
 						<li><a class="dropdown-button" data-hover="true" href="{% url 'cuidados' %}" data-activates="cuidados">Cuidados</a>							
@@ -89,7 +89,7 @@
 
 		<!--Inicio del section-->
 
-		{%block content %}{% endblock %}
+		{% block content %}{% endblock %}
 		
 		<!--Fin del section-->
 
