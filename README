@@ -1,1 +1,2 @@
-Este va a ser mi archivo de prueba, necesitamos verificar los camnios del fetch
+Despues de mazclar cambios en repositorio remoto, es neceario mezclr cambios en el repo local.
+Para esto es necesario hacer un git fetch y luego un git merge con mi repo local
