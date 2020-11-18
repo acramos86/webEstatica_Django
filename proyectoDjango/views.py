@@ -54,3 +54,23 @@ def burbSoporte(request):
     documento = loader.get_template('tienda_burbujaSoporte.html')
     docRender = documento.render()
     return HttpResponse(docRender)
+
+def erlenmeyer(request):
+    documento = loader.get_template('tienda_erlenmeyer.html')
+    docRender = documento.render()
+    return HttpResponse(docRender)
+
+def balonPlano(request):
+    documento = loader.get_template('tienda_balonPlano.html')
+    docRender = documento.render()
+    return HttpResponse(docRender)
+
+def domos(request):
+    documento = loader.get_template('tienda_domos.html')
+    docRender = documento.render()
+    return HttpResponse(docRender)
+
+def burbujaColgante(request):
+    documento = loader.get_template('burbColgante.html')
+    docRender = documento.render()
+    return HttpResponse(docRender)
