@@ -1,1 +1,0 @@
-web: gunicorn webestatica_django.wsgi --log-file -
