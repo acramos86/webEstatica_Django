@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from proyectoDjango.views import inicio, talleres, incubadora, duda, solDirecto, humeda, guias, cuidados, tarjetas, burbSoporte, erlenmeyer, balonPlano, domos, burbujaColgante
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,4 +35,4 @@ urlpatterns = [
     path('balonPlano/', balonPlano, name = 'balonPlano'),
     path('domos/', domos, name = 'domos'),
     path('burbujaColgante/', burbujaColgante, name = 'burbujaColgante')
-]
+] + static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
