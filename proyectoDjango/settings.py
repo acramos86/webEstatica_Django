@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '40u$^y@v63m)$g7m_)=pwtdryk_cmwx3r)rrv_7@*lafqyk@0#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -120,4 +120,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'proyectoDjango//static'),) 
-print(STATICFILES_DIRS)
